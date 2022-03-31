@@ -6,19 +6,20 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 10:05:12 by jsubel            #+#    #+#             */
-/*   Updated: 2021/12/08 15:14:37 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/03/31 13:42:11 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static int	is_whitespace(char c);
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	nbr;
-	int	sign;
+	int			i;
+	long long	nbr;
+	int			sign;
 
 	i = 0;
 	nbr = 0;
@@ -36,6 +37,8 @@ int	ft_atoi(const char *str)
 		nbr = 10 * nbr + (str[i] - '0');
 		i++;
 	}
+	if (nbr * sign > 2147483647 || nbr * sign < -2147483648)
+		ft_end_process("Error");
 	return (nbr * sign);
 }
 
