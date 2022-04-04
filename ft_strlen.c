@@ -6,11 +6,9 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 12:30:53 by jsubel            #+#    #+#             */
-/*   Updated: 2022/03/10 11:56:55 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/04/04 14:01:43 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "push_swap.h"
 
 size_t	ft_strlen(const char *s)
 {
