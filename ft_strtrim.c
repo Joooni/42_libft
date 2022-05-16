@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 13:04:47 by jsubel            #+#    #+#             */
-/*   Updated: 2022/01/12 17:10:54 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/05/05 16:27:24 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ static size_t	find_end(const char *s1, const char *set)
 	while (ft_strrchr(set, s1[end]) != 0 && end > 1)
 		end--;
 	return (end + 1);
+
 }
 
 char	*ft_strtrim(const char *s1, const char *set)

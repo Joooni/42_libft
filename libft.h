@@ -6,7 +6,7 @@
 /*   By: jsubel <jsubel@student.42wolfsburg.de >    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 14:29:14 by jsubel            #+#    #+#             */
-/*   Updated: 2022/04/25 14:08:08 by jsubel           ###   ########.fr       */
+/*   Updated: 2022/05/05 16:35:19 by jsubel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-
+# include <stdio.h>
 typedef struct s_list
 {
 	void			*content;
